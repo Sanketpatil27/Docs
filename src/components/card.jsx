@@ -24,7 +24,7 @@ export default function Card({data, reference}) {
                 </div>
                 {
                     data.tag.isOpen && (
-                        <div className={`tag w-full py-4 bg-${data.tag.tagColor}-200 text-violet-950 flex items-center justify-center`}>
+                        <div className={`tag w-full py-4 ${ data.tag.tagColor == 'green' ? 'bg-green-200': 'bg-red-200'} text-violet-950 flex items-center justify-center`}>
                             <h3 className="text-sm font-semibold"> { data.tag.tagTitle } </h3>
                         </div>
                     )
